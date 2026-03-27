@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.naodeng.alfred.workflow-updater</string>
+	<key>connections</key>
+	<dict>
+		<key>7A1B2C3D-4E5F-6789-ABCD-001122334455</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8B2C3D4E-5F67-89AB-CDEF-112233445566</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8B2C3D4E-5F67-89AB-CDEF-112233445566</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>naodeng</string>
+	<key>description</key>
+	<string>检查已安装的 Alfred workflows 是否有新版本，并自动下载更新。</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Auto Update Alfred Workflows</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>wfup</string>
+				<key>subtext</key>
+				<string>按回车后自动检查并更新可更新的 workflows</string>
+				<key>text</key>
+				<string>检查并更新 Alfred Workflows</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7A1B2C3D-4E5F-6789-ABCD-001122334455</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>run.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8B2C3D4E-5F67-89AB-CDEF-112233445566</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>关键词：wfup\n输入 wfup 后回车，会自动检查已安装 workflows 的新版本并尝试更新。\n仅支持能识别出 GitHub 仓库地址，且 release 里有 .alfredworkflow 安装包的项目。</string>
+	<key>uidata</key>
+	<dict>
+		<key>7A1B2C3D-4E5F-6789-ABCD-001122334455</key>
+		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>8B2C3D4E-5F67-89AB-CDEF-112233445566</key>
+		<dict>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/naodeng</string>
+</dict>
+</plist>
